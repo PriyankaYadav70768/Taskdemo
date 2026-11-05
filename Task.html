@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognifyz | Level 1, 2 & 3</title>
+
+    <!-- Bootstrap Framework for Level 2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Task.css">
+
+    <!-- Custom JavaScript -->
+    <script src="Task.js" defer></script>
+</head>
+
+<body>
+
+    <!--  NAVBAR: LEVEL 1  -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+
+            <!-- RESPONSIVE NAVBAR -->
+            <nav class="responsive-navbar">
+                <div class="nav-container">
+
+                    <a href="#home" class="nav-logo">Cognifyz<span>.</span></a>
+
+                    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false"
+                        aria-controls="navLinks">
+                        ☰
+                    </button>
+
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#level1">Level 1</a></li>
+                        <li><a href="#level2-grid">Level 2</a></li>
+                        <li><a href="#level3">Level 3</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+                </div>
+            </nav>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!--  HERO: LEVEL 1  -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-6">
+                        <span class="badge rounded-pill hero-badge">
+                            COGNIFYZ WEB DEVELOPMENT
+                        </span>
+
+                        <h1 class="hero-title">
+                            Learn, Create &amp;
+                            <span>Build the Web.</span>
+                        </h1>
+
+                        <p class="hero-text">
+                            Welcome to my web development project!
+                            Explore HTML, CSS, Bootstrap, responsive layouts,
+                            interactive image galleries and slideshows.
+                        </p>
+
+                        <a href="#level1" class="btn primary-btn">
+                            Explore Projects →
+                        </a>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <img class="hero-image"
+                            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80"
+                            alt="Laptop and web development workspace">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--  LEVEL 1  -->
+        <section class="section-pad" id="level1">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="level-label label-blue">LEVEL 1 · TASK 1</span>
+                    <h2>HTML &amp; CSS Fundamentals</h2>
+                    <p>My first webpage, navigation menu and basic form.</p>
+                </div>
+
+                <!-- Task 1: Heading, Paragraph and Image -->
+                <div class="intro-card">
+                    <div class="row align-items-center g-4">
+                        <div class="col-md-6">
+                            <h3>Welcome to My Website!</h3>
+                            <p>
+                                I am learning HTML and CSS to create
+                                beautiful, user-friendly websites.
+                                This section demonstrates a heading,
+                                paragraph and image.
+                            </p>
+                            <a href="#contact" class="btn primary-btn">
+                                Contact Me
+                            </a>
+                        </div>
+
+                        <div class="col-md-6">
+                            <img class="content-image"
+                                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+                                alt="Learning and working on a computer">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Task 2: Basic Form -->
+                <div class="mini-form-card">
+                    <h3>Quick Contact Form</h3>
+                    <p>Enter your name and try the submit button.</p>
+
+                    <form id="basicForm">
+                        <div class="input-group-custom">
+                            <label for="basicName">Your Name</label>
+                            <input type="text" id="basicName" placeholder="Enter your name" required>
+                        </div>
+
+                        <button type="submit" class="btn primary-btn">
+                            Submit
+                        </button>
+
+                        <p id="basicMessage" class="form-message" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <!--  LEVEL 2  -->
+        <section class="section-pad level-two" id="level2">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="level-label label-green">LEVEL 2 · TASK 1</span>
+                    <h2>Bootstrap Cards &amp; Responsive Grid</h2>
+                    <p>
+                        Responsive cards and a grid layout built with Bootstrap.
+                    </p>
+                </div>
+
+                <!-- Task 1: Bootstrap Card Component -->
+                <div class="row g-4">
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="card project-card h-100">
+                            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80"
+                                class="card-img-top" alt="Code displayed on a computer">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title">Web Development</h3>
+                                <p class="card-text">
+                                    Learn HTML, CSS and JavaScript
+                                    to build interactive websites.
+                                </p>
+                                <a href="#level3" class="btn card-btn mt-auto">
+                                    Explore Gallery
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="card project-card h-100">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
+                                class="card-img-top" alt="Computer-based learning">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title">Responsive Design</h3>
+                                <p class="card-text">
+                                    Create layouts that adapt to
+                                    phones, tablets and computers.
+                                </p>
+                                <a href="#level2-grid" class="btn card-btn mt-auto">
+                                    View Grid
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="card project-card h-100">
+                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
+                                class="card-img-top" alt="People working together on technology">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title">Front-end Frameworks</h3>
+                                <p class="card-text">
+                                    Use Bootstrap components and
+                                    utilities to build pages efficiently.
+                                </p>
+                                <a href="#level2-grid" class="btn card-btn mt-auto">
+                                    Learn More
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+
+                <!-- Task 2: Responsive Grid -->
+                <div id="level2-grid" class="grid-demo">
+                    <h3 class="text-center grid-heading">
+                        Responsive Grid Layout
+                    </h3>
+                    <p class="text-center section-description">
+                        One column on mobile, two on medium screens,
+                        and four on large screens.
+                    </p>
+
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="grid-tile">
+                                <span>💻</span>
+                                <h4>HTML</h4>
+                                <p>Structure of the webpage.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="grid-tile">
+                                <span>🎨</span>
+                                <h4>CSS</h4>
+                                <p>Colors and visual design.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="grid-tile">
+                                <span>⚡</span>
+                                <h4>Bootstrap</h4>
+                                <p>Responsive UI components.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="grid-tile">
+                                <span>📱</span>
+                                <h4>Responsive UI</h4>
+                                <p>Layouts for different screens.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- LEVEL 3  -->
+        <section class="section-pad" id="level3">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="level-label label-pink">LEVEL 3 · TASK 1</span>
+                    <h2>Interactive Image Gallery</h2>
+                    <p>Click any thumbnail to open a larger image.</p>
+                </div>
+
+                <!-- Task 1: Clickable Image Gallery -->
+                <div class="gallery-grid">
+
+                    <button class="gallery-item" data-index="0" aria-label="Enlarge mountain image">
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80"
+                            alt="Mountain landscape">
+                        <span>Mountain Escape</span>
+                    </button>
+
+                    <button class="gallery-item" data-index="1" aria-label="Enlarge forest image">
+                        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=600&q=80"
+                            alt="Green forest">
+                        <span>Green Forest</span>
+                    </button>
+
+                    <button class="gallery-item" data-index="2" aria-label="Enlarge ocean image">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80"
+                            alt="Ocean and beach">
+                        <span>Blue Ocean</span>
+                    </button>
+
+                    <button class="gallery-item" data-index="3" aria-label="Enlarge flower image">
+                        <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=600&q=80"
+                            alt="Colorful flowers">
+                        <span>Flower Garden</span>
+                    </button>
+
+                    <button class="gallery-item" data-index="4" aria-label="Enlarge desert image">
+                        <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=600&q=80"
+                            alt="Desert sand dunes">
+                        <span>Golden Desert</span>
+                    </button>
+
+                    <button class="gallery-item" data-index="5" aria-label="Enlarge lake image">
+                        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=600&q=80"
+                            alt="Peaceful lake">
+                        <span>Peaceful Lake</span>
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Large Image Lightbox -->
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+
+            <button id="closeLightbox" class="close-btn" aria-label="Close image viewer">&times;</button>
+
+            <button id="previousImage" class="lightbox-arrow" aria-label="Previous image">&#10094;</button>
+
+            <figure>
+                <img id="largeImage" src="" alt="">
+                <figcaption id="imageCaption"></figcaption>
+            </figure>
+
+            <button id="nextImage" class="lightbox-arrow" aria-label="Next image">&#10095;</button>
+        </div>
+
+
+        <!-- Task 2: Automatic Image Slideshow -->
+        <section class="section-pad slideshow-section" id="slideshow">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="level-label label-pink">LEVEL 3 · TASK 2</span>
+                    <h2>Automatic Image Slideshow</h2>
+                    <p>Images change automatically every three seconds.</p>
+                </div>
+
+                <div class="slideshow">
+                    <img id="slideImage"
+                        src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=85"
+                        alt="Mountain landscape">
+
+                    <div class="slide-overlay">
+                        <span id="slideNumber">01 / 06</span>
+                        <h3 id="slideTitle">Mountain Escape</h3>
+                    </div>
+
+                    <button id="prevSlide" class="slide-arrow prev-slide" aria-label="Previous slide">&#10094;</button>
+
+                    <button id="nextSlide" class="slide-arrow next-slide" aria-label="Next slide">&#10095;</button>
+                </div>
+
+                <div class="slide-controls">
+                    <button id="pauseSlide" class="btn primary-btn">
+                        Pause Slideshow
+                    </button>
+                    <div id="slideDots" class="slide-dots" aria-label="Choose slideshow image"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--  CONTACT / LEVEL 1 FORM  -->
+        <section class="section-pad contact-section" id="contact">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="level-label label-blue">GET IN TOUCH</span>
+                    <h2>Contact Form</h2>
+                    <p>Try submitting your name and email address.</p>
+                </div>
+
+                <form id="contactForm" class="contact-form">
+                    <div class="mb-3">
+                        <label for="contactName" class="form-label">
+                            Your Name
+                        </label>
+                        <input type="text" class="form-control" id="contactName" name="name"
+                            placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="contactEmail" class="form-label">
+                            Email Address
+                        </label>
+                        <input type="email" class="form-control" id="contactEmail" name="email"
+                            placeholder="Enter your email" required>
+                    </div>
+
+                    <button type="submit" class="btn primary-btn w-100">
+                        Submit Form
+                    </button>
+
+                    <p id="contactMessage" class="form-message" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- LEVEL 1 - TASK 2: JAVASCRIPT -->
+
+    <section class="section-pad js-task-section" id="javascript-task">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="level-label label-pink">
+                    LEVEL 1 · TASK 2
+                </span>
+                <h2>JavaScript Fundamentals</h2>
+                <p>Practice button events, greeting alerts and calculations.</p>
+            </div>
+
+            <div class="js-task-grid">
+
+                <!-- Task 1: Color Changing Button -->
+                <div class="js-card">
+                    <h3>1. Color Changing Button</h3>
+                    <p>Click the button to change its color.</p>
+
+                    <button id="colorButton" class="color-button">
+                        Click Me!
+                    </button>
+                </div>
+
+                <!-- Task 2: Greeting Alert -->
+                <div class="js-card">
+                    <h3>2. Time-Based Greeting</h3>
+                    <p>Get a greeting based on the current time.</p>
+
+                    <button id="greetingButton" class="greeting-button">
+                        Show Greeting
+                    </button>
+
+                    <p id="greetingMessage" aria-live="polite"></p>
+                </div>
+
+                <!-- Task 3: Addition Calculator -->
+                <div class="js-card">
+                    <h3>3. Simple Calculator</h3>
+                    <p>Enter two numbers to calculate their sum.</p>
+
+                    <label for="number1">First Number</label>
+                    <input type="number" id="number1" placeholder="Enter first number" step="any">
+
+                    <label for="number2">Second Number</label>
+                    <input type="number" id="number2" placeholder="Enter second number" step="any">
+
+                    <button id="addButton" class="calculator-button">
+                        Add Numbers
+                    </button>
+
+                    <h4 id="calculatorResult" aria-live="polite">
+                        Result: —
+                    </h4>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship Footer -->
+    <footer class="internship-footer">
+        <div class="container">
+
+            <p>
+                Where Data Meets Intelligence
+            </p>
+
+            <p>
+                For internship inquiries, refer to the official
+                Cognifyz Technologies website or internship announcement.
+            </p>
+
+            <small>
+                © <span id="footerYear"></span>
+                Cognifyz Internship Landing Page
+            </small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript for mobile navigation -->
+    <!--  <script src="Task.js"></script> -->
+
+
+
+</body>
+
+</html>
+<!--<img src="https://picsum.photos/600/400" alt="A random sample photograph ">-->
